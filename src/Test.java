@@ -6,7 +6,6 @@ public class Test {
         Dictionary dic = new Dictionary();
         String word  = dic.selectWord();
         String hint = dic.hint();
-        System.out.println(word);
 
         // initiate word array
         Display dis = new Display();
@@ -31,5 +30,6 @@ public class Test {
                 isPlaying = false;
             }
         }
+        System.out.println("Answer: " + word);
     }
 }
