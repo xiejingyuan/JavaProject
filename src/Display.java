@@ -9,7 +9,7 @@ public class Display {
         }
     }
 
-    public char[] setLetter(String word, char letter) {
+    public char[] setCorrectLetter(String word, char letter) {
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == letter) {
                 wordArray[i] = letter;
@@ -18,11 +18,11 @@ public class Display {
         return wordArray;
     }
 
-    public void show(int num) {
+    public void showWrongGuess(int wrongCount) {
         for (char c : wordArray) {
             System.out.print(c);
         }
-        System.out.println("    Wrong Guess: " + num);
+        System.out.println("\tWrong Guess: " + wrongCount);
     }
 }
 
