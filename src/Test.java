@@ -31,5 +31,6 @@ public class Test {
             }
         }
         System.out.println("Answer: " + word);
+        scan.close();
     }
 }
