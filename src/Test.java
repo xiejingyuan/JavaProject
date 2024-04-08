@@ -17,7 +17,7 @@ public class Test {
         boolean isPlaying = true;
         while(isPlaying) {
             System.out.printf("Please input a letter (%s): ",hint );
-            char input = scan.next().charAt(0);
+            char input = scan.next().toUpperCase().charAt(0);
             char[] wordArray = dis.setCorrectLetter(word, input);
             int[] result = Judge.status(wordArray, input);
             dis.showWrongGuess(result[1]);
