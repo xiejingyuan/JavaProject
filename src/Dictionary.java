@@ -10,7 +10,7 @@ public class Dictionary {
 
     public String selectWord () {
         int i = new Random().nextInt(3);
-        int j = new Random().nextInt(6);
+        int j = new Random().nextInt(10);
         category = i;
         return dic[i][j];
     };
